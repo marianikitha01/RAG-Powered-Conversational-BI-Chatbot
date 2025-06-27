@@ -7,8 +7,8 @@ from sentence_transformers import SentenceTransformer
 # 1. Load environment variables
 load_dotenv()
 PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
-PINECONE_REGION = os.getenv("PINECONE_REGION")  # e.g., "us-west1"
-PINECONE_CLOUD = os.getenv("PINECONE_CLOUD")    # e.g., "gcp"
+PINECONE_REGION = os.getenv("PINECONE_REGION")  
+PINECONE_CLOUD = os.getenv("PINECONE_CLOUD")   
 
 # 2. Initialize Pinecone client
 pc = Pinecone(api_key=PINECONE_API_KEY)
@@ -87,4 +87,4 @@ for start in range(0, len(df), batch_size):
     index.upsert(vectors=to_upsert)
     print(f"Upserted rows {start} to {start + len(batch)}")
 
-print("✅ Finished indexing all data into Pinecone with local embeddings!")
+print("Finished indexing all data into Pinecone with local embeddings!")

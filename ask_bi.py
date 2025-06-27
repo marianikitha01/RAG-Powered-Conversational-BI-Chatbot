@@ -45,9 +45,9 @@ qa = RetrievalQA.from_chain_type(
 # Chat loop
 print("\n🔍 BI Chatbot Ready! Ask a question (type 'exit' to quit)\n")
 while True:
-    q = input("❓ Your question: ")
+    q = input("Your question: ")
     if q.lower() in ("exit", "quit"):
-        print("👋 Goodbye!")
+        print("Goodbye!")
         break
     ans = qa.run(q)
-    print(f"\n💡 Answer:\n{ans}\n")
+    print(f"\nAnswer:\n{ans}\n")
