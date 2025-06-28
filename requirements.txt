@@ -1,0 +1,10 @@
+python-dotenv==1.0.0
+numpy==1.26.2
+pandas==2.0.3
+sentence-transformers==2.2.2
+huggingface_hub==0.14.1
+faiss-cpu==1.7.3
+langchain==0.3.26
+langchain-community==0.3.26
+openai==0.27.0
+transformers==4.30.2
