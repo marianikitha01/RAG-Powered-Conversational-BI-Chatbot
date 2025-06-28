@@ -83,9 +83,10 @@ Type questions at the prompt and enjoy your BI assistant.
 1. Build the Docker image:
 
    ```bash
+   docker build -t rag-bi-chatbot\:latest .
    ```
 
-docker build -t rag-bi-chatbot\:latest .
+
 
 ````
 
@@ -97,7 +98,7 @@ docker run --rm -it \
   rag-bi-chatbot:latest
 ````
 
-> The chatbot will start inside the container—ask questions as usual.
+> The chatbot will start inside the container, ask questions as usual.
 
 ---
 
